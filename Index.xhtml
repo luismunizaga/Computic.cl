@@ -1,0 +1,460 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<script src="jquery-1.11.1.js"></script>
+		<script type="text/javascript">
+			$("document").ready(function(){
+						$("#home").hover(function()
+{ 
+   $(this).toggleClass('claseInicioDos');
+});
+
+$("#Servicios").hover(function()
+{ 
+   $(this).toggleClass('claseServiciosDos');
+   $(this).click(function(){
+        $('#popup').fadeIn('slow');
+        $('.popup-overlay').fadeIn('slow');
+        $('.popup-overlay').height($(window).height());
+        $("#seguridad").hover(function()
+{ 
+   $(this).toggleClass('cajaSeguridad');
+});
+    
+        $("#popup").focusout(function(){
+        	$('#popup').fadeOut('fast');
+        
+        });
+    });
+    
+    $('#close').click(function(){
+        $('#popup').fadeOut('slow');
+        $('.popup-overlay').fadeOut('slow');
+        
+    });
+});
+
+$("#trabajos").hover(function()
+{ 
+   $(this).toggleClass('claseTrabajosDos');
+});
+
+$("#acerca").hover(function()
+{ 
+   $(this).toggleClass('claseAcercaDos');
+});
+
+$("#contacto").hover(function()
+{ 
+   $(this).toggleClass('claseContactoDos');
+});
+
+
+
+
+
+
+
+
+
+
+
+
+		});
+
+		
+			
+			
+			
+			
+				
+			
+			
+		</script>
+<style type="text/css">
+body{
+	background-image: url("bodyBackground.jpg");
+}
+
+.claseInicioUno{
+	width:140px;
+	 position: absolute; 
+	 left: 150px; height: 50px;
+-webkit-border-radius: 75px;-moz-border-radius: 75px;border-radius: 75px;background-color:#2BACE3;
+	
+}
+.claseInicioDos{
+	width:140px;
+	cursor: pointer;
+	 position: absolute; 
+	 left: 150px;
+	  height: 70px;
+-webkit-border-radius: 75px;-moz-border-radius: 75px;border-radius: 75px;background-color:#2BACE3;
+-webkit-box-shadow: #0A030A 13px 13px 13px;-moz-box-shadow: #0A030A 13px 13px 13px; box-shadow: #0A030A 13px 13px 13px;	
+font-size: 20px;
+}
+
+.claseServiciosUno{
+	width:140px;
+	 position: absolute; 
+	 left: 350px; height: 50px;
+-webkit-border-radius: 75px;-moz-border-radius: 75px;border-radius: 75px;background-color:#2BACE3;
+	
+}
+
+.claseServiciosDos{
+	width:140px;
+	cursor: pointer;
+	 position: absolute; 
+	 left: 350px;
+	  height: 70px;
+-webkit-border-radius: 75px;-moz-border-radius: 75px;border-radius: 75px;background-color:#2BACE3;
+-webkit-box-shadow: #0A030A 13px 13px 13px;-moz-box-shadow: #0A030A 13px 13px 13px; box-shadow: #0A030A 13px 13px 13px;	
+font-size: 20px;
+}
+
+.claseTrabajosUno{
+	width:140px;
+	 position: absolute; 
+	 left: 540px; height: 50px;
+-webkit-border-radius: 75px;-moz-border-radius: 75px;border-radius: 75px;background-color:#2BACE3;
+	
+}
+
+.claseTrabajosDos{
+	width:150px;
+	cursor: pointer;
+	 position: absolute; 
+	 left: 540px;
+	  height: 70px;
+-webkit-border-radius: 75px;-moz-border-radius: 75px;border-radius: 75px;background-color:#2BACE3;
+-webkit-box-shadow: #0A030A 13px 13px 13px;-moz-box-shadow: #0A030A 13px 13px 13px; box-shadow: #0A030A 13px 13px 13px;	
+font-size: 18px;
+}
+
+.claseAcercaUno{
+	width:140px;
+	 position: absolute; 
+	 left: 740px; height: 50px;
+-webkit-border-radius: 75px;-moz-border-radius: 75px;border-radius: 75px;background-color:#2BACE3;
+	
+}
+
+.claseAcercaDos{
+	width:140px;
+	cursor: pointer;
+	 position: absolute; 
+	 left: 740px;
+	  height: 70px;
+-webkit-border-radius: 75px;-moz-border-radius: 75px;border-radius: 75px;background-color:#2BACE3;
+-webkit-box-shadow: #0A030A 13px 13px 13px;-moz-box-shadow: #0A030A 13px 13px 13px; box-shadow: #0A030A 13px 13px 13px;	
+font-size: 20px;
+}
+
+.claseContactoUno{
+	width:140px;
+	 position: absolute; 
+	 left: 940px; height: 50px;
+-webkit-border-radius: 75px;-moz-border-radius: 75px;border-radius: 75px;background-color:#2BACE3;
+	
+}
+
+.claseContactoDos{
+	width:140px;
+	cursor: pointer;
+	 position: absolute; 
+	 left: 940px;
+	  height: 70px;
+-webkit-border-radius: 75px;-moz-border-radius: 75px;border-radius: 75px;background-color:#2BACE3;
+-webkit-box-shadow: #0A030A 13px 13px 13px;-moz-box-shadow: #0A030A 13px 13px 13px; box-shadow: #0A030A 13px 13px 13px;	
+font-size: 20px;
+}
+
+
+
+
+
+	.primerDiv{
+		width: 100%;
+height: 90px;
+
+border: 3px #888888 solid;
+
+
+	}
+	
+	.segundoDiv{
+		
+		width: 100%;
+		height: 60px;
+border: 3px #888888 solid;		
+	}
+	
+	.tercerDiv{
+		width: 70%;
+         position: absolute;
+		right:180px;
+		background-color:white;
+		
+height: 100%;
+
+border: 3px #888888 solid;
+	}
+	
+	
+	body {
+ 
+    background-color: #cccccc;
+}
+
+#popup {
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1001;
+}
+
+.content-popup {
+    margin:0px auto;
+    margin-top:120px;
+    position:relative;
+    padding:10px;
+    width:700px;
+    min-height:350px;
+    border-radius:4px;
+    background-color:#FFFFFF;
+    box-shadow: 0 2px 5px #666666;
+}
+
+.content-popup h2 {
+    color:#48484B;
+    border-bottom: 1px solid #48484B;
+    margin-top: 0;
+    padding-bottom: 4px;
+    
+}
+
+.popup-overlay {
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    display:none;
+    background-color: #777777;
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.close {
+    position: absolute;
+    right: 15px;
+}
+
+.cajitas{
+	width: 100%	;
+height: 100%;
+
+border: 11px #132e49 outset;
+
+background-color: #ffffff;
+
+-webkit-border-radius: 150px;
+-moz-border-radius: 150px;
+border-radius: 150px;
+
+-moz-box-shadow: inset 0px 0px 14px 0px #000000;
+-webkit-box-shadow: inset 0px 0px 14px 0px #000000;
+box-shadow: inset 0px 0px 14px 0px #000000;
+}
+
+.cajaSeguridad{
+	height: 150%;
+	width: 150%;
+	
+}
+
+* {
+    margin: 0;
+    padding: 0;
+  	-moz-box-sizing: border-box;
+		-o-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+
+	
+
+	ul {
+		margin: 30px auto;
+		text-align: center;
+	}
+
+	li {
+		list-style: none;
+		position: relative;
+		display: inline-block;
+		width: 100px;
+		height: 100px;
+	}
+
+
+
+	.round {
+		display: block;
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 200%;
+		height: 200%;
+		padding-top: 30px;		
+		text-decoration: none;		
+		text-align: center;
+		font-size: 25px;		
+		text-shadow: 0 1px 0 rgba(255,255,255,.7);
+		letter-spacing: -.065em;
+		font-family: "Hammersmith One", sans-serif;		
+		-webkit-transition: all .25s ease-in-out;
+		-o-transition: all .25s ease-in-out;
+		-moz-transition: all .25s ease-in-out;
+		transition: all .25s ease-in-out;
+		box-shadow: 2px 2px 7px rgba(0,0,0,.2);
+		border-radius: 300px;
+		z-index: 1;
+		border-width: 4px;
+		border-style: solid;
+	}
+
+	.round:hover {
+		width: 150%;
+		height: 150%;
+		left: -15%;
+		top: -15%;
+		font-size: 33px;
+		padding-top: 38px;
+		-webkit-box-shadow: 5px 5px 10px rgba(0,0,0,.3);
+		-o-box-shadow: 5px 5px 10px rgba(0,0,0,.3);
+		-moz-box-shadow: 5px 5px 10px rgba(0,0,0,.3);
+		box-shadow: 5px 5px 10px rgba(0,0,0,.3);
+		z-index: 2;
+		border-size: 10px;
+		-webkit-transform: rotate(-360deg);
+		-moz-transform: rotate(-360deg);
+		-o-transform: rotate(-360deg);
+		transform: rotate(-360deg);
+	}
+
+	a.red {
+		background-color: rgba(239,57,50,1);
+		color: rgba(133,32,28,1);
+		border-color: rgba(133,32,28,.2);
+	}
+
+	a.red:hover {
+		color: rgba(239,57,50,1);
+	}
+
+	a.green {
+		background-color: rgba(1,151,171,1);
+		color: rgba(0,63,71,1);
+		border-color: rgba(0,63,71,.2);
+	}
+
+	a.green:hover {
+		color: rgba(1,151,171,1);
+	}
+
+	a.yellow {
+		background-color: rgba(252,227,1,1);
+		color: rgba(153,38,0,1);
+		border-color: rgba(153,38,0,.2);
+	}
+
+	a.yellow:hover {
+		color: rgba(252,227,1,1);
+	}
+
+	.round span.round {
+		display: block;
+		opacity: 0;
+		-webkit-transition: all .5s ease-in-out;
+		-moz-transition: all .5s ease-in-out;
+		-o-transition: all .5s ease-in-out;
+		transition: all .5s ease-in-out;
+		font-size: 1px;
+		border: none;
+		padding: 40% 20% 0 20%;
+		color: #fff;
+	}
+
+	.round span:hover {
+		opacity: .85;
+		font-size: 16px;
+		-webkit-text-shadow: 0 1px 1px rgba(0,0,0,.5);
+		-moz-text-shadow: 0 1px 1px rgba(0,0,0,.5);
+		-o-text-shadow: 0 1px 1px rgba(0,0,0,.5);
+		text-shadow: 0 1px 1px rgba(0,0,0,.5);	
+	}
+
+	.green span {
+		background: rgba(0,63,71,.7);		
+	}
+
+	.red span {
+		background: rgba(133,32,28,.7);		
+	}
+
+	.yellow span {
+		background: rgba(161,145,0,.7);	
+
+	}
+	
+	
+	
+	
+	
+	
+</style>
+		<title>Index</title>
+
+	</head>
+
+	<body>
+		<div id="popup" style="display: none;">
+    <div class="content-popup">
+        <div class="close"><a href="#" id="close"><img src="images/close.png"/></a></div>
+        <div>
+        			<ul>
+  <li><a style="position: absolute;left: -170px;"href="#" class="round green">Seguridad<span class="round">Sistemas de Vigilancia</span></a></li>
+  <li><a style="position: absolute;left: -40px;" href="#" class="round red">Informatica<span class="round">Soluciones Informaticas</span></a></li>
+	<li><a style="position: absolute;left: 80px;" href="#" class="round yellow">Web<span class="round">Desarrolo Web</span></a></li>
+</ul> 
+		
+          
+          
+          
+        </div>
+    </div>
+</div>
+		<div class="primerDiv" > </div>
+		<div class="segundoDiv" name="menuBotones">
+			<div  id="home" class="claseInicioUno"><p id="pUno"style="position: absolute; left: 50px;">Inicio</p> </div>
+			<div  id="Servicios" class="claseServiciosUno"><p id="pDos"style="position: absolute; left: 40px;">Servicios</p> </div>
+			<div  id="trabajos" class="claseTrabajosUno"><p id="pTres"style="position: absolute; left: 12px;">Nuestros Trabajos</p> </div>
+			<div  id="acerca" class="claseAcercaUno"><p id="pCuatro"style="position: absolute; left: 40px;">Acerca</p> </div>
+			<div  id="contacto" class="claseContactoUno"><p id="pCinco"style="position: absolute; left: 35px;">Contacto</p> </div>
+			 </div>
+			 <div class="tercerDiv"> 
+			 	
+			 	<div style="display: inline"><iframe width="500" height="390" src="//www.youtube.com/embed/wIIAdlFCCq0" frameborder="0" allowfullscreen> </iframe><h1 style="position: absolute;rigth:100px;display: inline">Conferencia sobre la mierda en taiwan. Dicen que en china todo vale caca y que el vino es malo >:(	</h1></div>
+			 	
+			 	</div>
+			 	
+		
+
+	</body>
+</html>
